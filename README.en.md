@@ -47,6 +47,10 @@ Edit `src/client/`, then build the generated `client.js`. Public tests cover rep
 
 See [Credits](CREDITS.md) for development collaborators, host and dependency authors, [46 research references](docs/SOURCES.md) for design research, and [Notice](NOTICE.md) for third-party licenses. Releases retain the original dependency licenses. Acknowledgement does not imply review or endorsement. This is not an official DeepSeek or Apple product. No private conversations, host files, reference-game assets or research source snapshots are distributed.
 
+## Support
+
+If you find the plugin useful, you can [support the project on Afdian](https://afdian.com/a/alantica). Donations are entirely optional and do not affect features or usage rights.
+
 ## License
 
 Copyright © 2026 爱伦提卡. [MIT licensed](LICENSE): use, modify and redistribute, including commercially. Retain the copyright, original-project URL and permission notice in the license when distributing copies or derivatives. No extra mandatory UI attribution is required.
