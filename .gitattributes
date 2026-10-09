@@ -4,3 +4,5 @@ index.js -text
 src/client/*.js -text
 *.png binary
 *.jpg binary
+*.webp binary
+*.gif binary
