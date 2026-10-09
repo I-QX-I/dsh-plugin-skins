@@ -6,7 +6,7 @@ DeepSeek Harness 独立皮肤插件。九款配色，液体玻璃与模糊玻璃
 
 ## 实机预览
 
-![Aero 主题实机动态预览](docs/assets/aero-live.webp)
+![Aero 主题实机动态预览](docs/assets/aero-live.gif)
 
 Aero 液体玻璃，真实界面录制，自动循环。[静态截图](docs/assets/aero-window.png) · [录制说明](docs/PREVIEW.md)
 

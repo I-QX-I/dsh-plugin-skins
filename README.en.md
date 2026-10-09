@@ -6,7 +6,7 @@ An independent DeepSeek Harness skin plugin. Nine palettes, liquid and frosted g
 
 ## Live preview
 
-![Aero theme recorded in DeepSeek Harness](docs/assets/aero-live.webp)
+![Aero theme recorded in DeepSeek Harness](docs/assets/aero-live.gif)
 
 Aero liquid glass, recorded from the running app and looped automatically. [Still screenshot](docs/assets/aero-window.png) · [Recording notes](docs/PREVIEW.md)
 
