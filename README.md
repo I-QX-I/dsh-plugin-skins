@@ -57,10 +57,12 @@ npm run release -- --out=../glass-skins-release
 
 本项目不是 DeepSeek、Apple 或其他参考机构的官方产品；参考与致谢不表示参与或背书。没有分发游戏素材、私人聊天、宿主私有文件或研究源码快照。
 
-## 支持项目
-
-如果这个插件对你有帮助，可以通过 [爱发电支持项目](https://afdian.com/a/alantica)。打赏完全自愿，不影响任何功能或使用权限。
-
 ## 许可
 
 Copyright © 2026 爱伦提卡。采用 [MIT 许可证](LICENSE)，允许使用、修改及商业分发；分发副本或衍生版本时，保留许可证中的版权声明、原项目链接与许可文字。无需额外强制展示界面署名。
+
+---
+
+[![请我喝杯咖啡](https://img.shields.io/badge/☕_请我喝杯咖啡-FFDD00?style=for-the-badge&labelColor=FFDD00&color=FFDD00)](https://afdian.com/a/alantica)
+
+通过爱发电自愿支持，不影响功能或使用权限。
