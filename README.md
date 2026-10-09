@@ -4,6 +4,8 @@ DeepSeek Harness 的独立外观插件：通透玻璃、流动渐变与九款主
 
 [English](README.en.md) · [下载安装](https://github.com/I-QX-I/dsh-plugin-skins/releases/latest) · [贡献致谢](CREDITS.md) · [研究资料](docs/SOURCES.md)
 
+## 实机效果预览
+
 ![Aero 液体玻璃：DeepSeek Harness 实机窗口截图](docs/assets/aero-window.png)
 
 *Aero 主题的真实 Windows 窗口截图，保留原始画面，未重绘。*

@@ -4,6 +4,8 @@ An independent appearance plugin for DeepSeek Harness: translucent glass, flowin
 
 [中文](README.md) · [Download](https://github.com/I-QX-I/dsh-plugin-skins/releases/latest) · [Credits](CREDITS.md) · [References](docs/SOURCES.md)
 
+## Preview
+
 ![Aero liquid glass: actual DeepSeek Harness window](docs/assets/aero-window.png)
 
 *Original Windows screenshot of the Aero theme with the host UI in Chinese; not a rendered mockup.*
