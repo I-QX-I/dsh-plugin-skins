@@ -1,0 +1,5 @@
+# Bundle patch: one Host row named after this package. Its Host half only
+# publishes the `Config` schema the settings page writes through.
+- insert:
+    - id: skins
+      name: 'dsh-plugin-skins'

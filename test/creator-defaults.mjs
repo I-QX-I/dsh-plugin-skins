@@ -1,0 +1,10 @@
+import {readFileSync} from 'node:fs';import {runInNewContext} from 'node:vm';import assert from 'node:assert/strict';
+const source=readFileSync(new URL('../client.js',import.meta.url),'utf8'),host=readFileSync(new URL('../index.js',import.meta.url),'utf8');
+const expected={skin:'aero',intensity:'bare',effect:'strong',drift:'on',pointer:'on',vivid:'standard',glass:'on',flowSpeed:'faster',orbSpeed:'standard',colorSeparation:'bold',rim:'thin',thickness:'standard'};
+const definitions=Object.fromEntries([...host.matchAll(/(\w+): z.string\(\).default\('([^']+)'\)/g)].map(m=>[m[1],m[2]]));assert.deepEqual(definitions,expected);
+const from=source.indexOf('function normalize (raw)'),to=source.indexOf('function definedOnly',from);
+const constants=['SKINS','INTENSITIES','EFFECTS','VIVIDS','AMBIENT_SPEEDS','GLASS_RIMS','GLASS_THICKNESSES'].map(key=>`const ${key} = ${JSON.stringify((key==='SKINS'?['off','aero','graphite','jade']:key==='INTENSITIES'?['pure','bare','standard']:key==='EFFECTS'?['off','soft','strong']:key==='VIVIDS'?['soft','standard','radiant']:key==='AMBIENT_SPEEDS'?['slow','standard','fast','faster']:key==='GLASS_RIMS'?['off','thin','standard','thick']:['thin','standard','thick']).map(id=>({id})))};`).join('');
+const normalize=runInNewContext(constants+`const DEFAULT_CHOICE=${JSON.stringify(expected)};const COLOR_SEPARATIONS=['soft','standard','bold'];`+source.slice(from,to)+';normalize');
+const plain=x=>JSON.parse(JSON.stringify(x));assert.deepEqual(plain(normalize({})),expected);
+const previous={skin:'off',intensity:'standard',effect:'soft',drift:'off',pointer:'off',vivid:'soft',glass:'off',flowSpeed:'slow',orbSpeed:'fast',colorSeparation:'soft',rim:'off',thickness:'thick'};assert.deepEqual(plain(normalize(previous)),previous);
+assert.deepEqual(plain(normalize({...expected,skin:'ocean'})),expected);console.log('Creator defaults match twelve Config fields; fresh and explicit previous choices survive normalization');

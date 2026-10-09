@@ -1,0 +1,5 @@
+import {readFileSync} from 'node:fs';import assert from 'node:assert/strict';
+const {zh,en}=new Function(readFileSync(new URL('../src/client/locales.js',import.meta.url),'utf8')+';return {zh,en}')();assert.deepEqual(Object.keys(zh).sort(),Object.keys(en).sort());
+const refs=new Function(readFileSync(new URL('../src/client/acknowledgements.js',import.meta.url),'utf8')+';return SK_REFERENCES')();const canonical=[...readFileSync(new URL('../docs/SOURCES.md',import.meta.url),'utf8').matchAll(/^- \[([^\]]+)\]\((https:\/\/[^)]+)\)/gm)].map(m=>[m[1],m[2]]);assert.deepEqual(refs,canonical);assert.equal(refs.length,46);
+for(const dict of [zh,en])for(const key of ['acknowledgements','contributorsText','dependenciesText','referencesText','creditsFiles'])assert(dict[key]?.trim());for(const dict of [zh,en])assert(dict.contributorsText.includes('爱伦提卡')&&dict.contributorsText.includes('Codex')&&dict.dependenciesText.includes('@standard-schema/spec'));
+console.log('All 46 shipped references and bilingual credits are present; dictionaries match');

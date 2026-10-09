@@ -1,0 +1,84 @@
+{
+  "name": "dsh-plugin-skins",
+  "version": "2.6.3",
+  "author": "爱伦提卡",
+  "private": true,
+  "type": "module",
+  "description": "爱伦提卡制作的独立玻璃皮肤：九款配色、液体与模糊玻璃，支持浅色与深色宿主外观。",
+  "files": [
+    "client.js",
+    "index.js",
+    "cordis.patch.yml",
+    "README.md",
+    "INSTALL.md",
+    "AI-INSTALL.md",
+    "INSTALLER.mjs",
+    "DEPENDENCIES.json",
+    "NOTICE.md",
+    "CREDITS.md",
+    "README.en.md",
+    "INSTALL.en.md",
+    "AI-INSTALL.en.md",
+    "locale/en.json",
+    "locale/zh.json",
+    "docs/SOURCES.md",
+    "docs/ARCHITECTURE.md",
+    "docs/COMPATIBILITY.md",
+    "TEST-OTHER-DEVICE.md",
+    "LICENSE",
+    "docs/OPEN-SOURCE.md",
+    "WATERMARKS.md",
+    "CREATOR.json"
+  ],
+  "scripts": {
+    "build": "node scripts/build-client.mjs",
+    "build:check": "node scripts/build-client.mjs --check",
+    "test": "node test/check.mjs",
+    "release:stage": "node scripts/stage-release.mjs",
+    "release": "node scripts/package-release.mjs"
+  },
+  "dependencies": {
+    "@deepseek-ai/schemastery": "3.18.4"
+  },
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./package.json": "./package.json",
+    "./locale/*.json": "./locale/*.json"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "immediately": true,
+      "inject": [
+        "@deepseek-ai/dsh-client-ui-layout",
+        "@deepseek-ai/dsh-client-ui-settings"
+      ]
+    }
+  },
+  "license": "MIT",
+  "homepage": "https://github.com/I-QX-I/dsh-plugin-skins",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/I-QX-I/dsh-plugin-skins.git"
+  },
+  "bugs": {
+    "url": "https://github.com/I-QX-I/dsh-plugin-skins/issues"
+  },
+  "keywords": [
+    "deepseek-harness",
+    "glass",
+    "skins",
+    "frutiger-aero",
+    "themes"
+  ],
+  "glassSkins": {
+    "creator": "爱伦提卡",
+    "attributionId": "glass-skins.ailuntika.2026",
+    "watermark": "static-only",
+    "telemetry": false
+  }
+}

@@ -1,0 +1,6 @@
+* text eol=lf
+client.js -text
+index.js -text
+src/client/*.js -text
+*.png binary
+*.jpg binary

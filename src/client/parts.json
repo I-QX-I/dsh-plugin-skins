@@ -1,0 +1,20 @@
+[
+  "setup.js",
+  "locales.js",
+  "themes.js",
+  "recipes-and-selectors.js",
+  "color-tools.js",
+  "work-styles.js",
+  "skin-styles.js",
+  "settings-styles.js",
+  "style-installation.js",
+  "preference.js",
+  "acknowledgements.js",
+  "settings.js",
+  "work-state.js",
+  "background.js",
+  "settings-glyph.js",
+  "optics.js",
+  "geometry-and-motion.js",
+  "lifecycle.js"
+]
