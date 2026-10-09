@@ -53,13 +53,7 @@ npm run release -- --out=../glass-skins-release
 
 ## 开发贡献与参考
 
-| 贡献者 / 协作工具 | 主要职责 |
-| --- | --- |
-| 爱伦提卡 | 项目发起、设计方向、需求与视觉/交互验收 |
-| OpenAI Codex | 代码实现与整理、玻璃/动效研究、性能与兼容验证、安装及开源准备 |
-| DeepSeek Harness 内的 AI | 早期原型、插件开发、宿主 DOM 核对与布局/几何优化 |
-
-AI 名称表示开发协作工具。感谢 DeepSeek Harness 项目及其贡献者提供宿主；依赖许可和 46 项研究链接见 [CREDITS.md](CREDITS.md)、[NOTICE.md](NOTICE.md)、[SOURCES.md](docs/SOURCES.md)。发布包携带三项 MIT 依赖并保留其原始许可证。
+开发协作、宿主及依赖作者见 [贡献致谢](CREDITS.md)。设计研究见 [46 项参考资料](docs/SOURCES.md)，第三方许可见 [NOTICE.md](NOTICE.md)。发布包保留所含依赖的原始许可证。
 
 本项目不是 DeepSeek、Apple 或其他参考机构的官方产品；参考与致谢不表示参与或背书。没有分发游戏素材、私人聊天、宿主私有文件或研究源码快照。
 

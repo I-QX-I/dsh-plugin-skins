@@ -45,13 +45,7 @@ Edit `src/client/`, then build the generated `client.js`. Public tests cover rep
 
 ## Development credits and references
 
-| Contributor / development tool | Main contribution |
-| --- | --- |
-| 爱伦提卡 | Project initiation, design direction, requirements and visual/interaction acceptance |
-| OpenAI Codex | Implementation and code organization, glass/motion research, performance and compatibility checks, installation and open-source preparation |
-| AI within DeepSeek Harness | Early prototypes, plugin development, host DOM checks and layout/geometry improvements |
-
-AI names identify development tools. The host is provided by the DeepSeek Harness project and its contributors. See [Credits](CREDITS.md), [Notice](NOTICE.md) and [46 research references](docs/SOURCES.md) for roles, third-party licenses and research attribution. Releases vendor three MIT dependencies with upstream notices. Acknowledgement does not imply review or endorsement. This is not an official DeepSeek or Apple product. No private conversations, host files, reference-game assets or research source snapshots are distributed.
+See [Credits](CREDITS.md) for development collaborators, host and dependency authors, [46 research references](docs/SOURCES.md) for design research, and [Notice](NOTICE.md) for third-party licenses. Releases retain the original dependency licenses. Acknowledgement does not imply review or endorsement. This is not an official DeepSeek or Apple product. No private conversations, host files, reference-game assets or research source snapshots are distributed.
 
 ## License
 
