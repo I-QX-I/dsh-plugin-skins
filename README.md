@@ -1,28 +1,22 @@
 # 玻璃皮肤 · Glass Skins
 
-**DeepSeek Harness 独立玻璃皮肤插件 · 爱伦提卡制作**
+DeepSeek Harness 的独立外观插件：通透玻璃、流动渐变与九款主题，可随时关闭或卸载。
 
-[English](README.en.md) · [下载安装](https://github.com/I-QX-I/dsh-plugin-skins/releases/latest) · [宣传片](https://github.com/I-QX-I/dsh-plugin-skins/releases/download/v2.6.3/glass-skins-promo.mp4) · [贡献致谢](CREDITS.md) · [研究资料](docs/SOURCES.md)
-
-![Glass Skins](docs/assets/cover.jpg)
-
-通透玻璃、流动色彩，给熟悉的工作空间一种新的光感。保留宿主功能和已有偏好，可随时关闭、停用或卸载。
+[English](README.en.md) · [下载安装](https://github.com/I-QX-I/dsh-plugin-skins/releases/latest) · [贡献致谢](CREDITS.md) · [研究资料](docs/SOURCES.md)
 
 ## 一句话安装
 
 把下面这一行粘贴到 **DeepSeek Harness 的对话输入框**，发送即可：
 
 ```text
-请安装并启用爱伦提卡制作的玻璃皮肤插件：https://github.com/I-QX-I/dsh-plugin-skins/releases/download/v2.6.3/glass-skins.zip；按包内 AI-INSTALL.md 执行，沿用当前 profile，保留已有偏好。
+请安装并启用玻璃皮肤插件：https://github.com/I-QX-I/dsh-plugin-skins/releases/download/v2.6.3/glass-skins.zip；按包内 AI-INSTALL.md 执行，沿用当前 profile，保留已有偏好。
 ```
 
-这是一条给宿主 AI 的安装请求，不是终端命令。AI 下载正式 ZIP、校验并使用宿主管理器安装；缺少安装工具时可使用官方 CLI。依然遵守宿主所需权限。若 AI 无法下载，直接[下载 ZIP](https://github.com/I-QX-I/dsh-plugin-skins/releases/download/v2.6.3/glass-skins.zip)，拖进对话后说「安装这个插件」。不用克隆仓库、手工解压或构建源码。
+这是一条给宿主 AI 的安装请求，不是终端命令。AI 下载正式 ZIP、校验并使用宿主管理器安装；缺少安装工具时可使用官方 CLI，依然遵守宿主权限。若 AI 无法下载，直接[下载 ZIP](https://github.com/I-QX-I/dsh-plugin-skins/releases/download/v2.6.3/glass-skins.zip)，拖进对话后说「安装这个插件」。使用 Release 的安装包，**不要使用 GitHub 自动生成的 Source code ZIP**。不用克隆仓库、手工解压或构建源码。
 
 安装后打开 **设置 → 皮肤**。下载原件可移动、改名或删除；安装用的受管理缓存应保留。新安装使用 Aero 液体玻璃预设，升级保留已有显式选择。需重启时，安装助手会提示。
 
 ## 九款主题，两种玻璃
-
-![Nine themes](docs/assets/themes.jpg)
 
 Aero · 极光 · 石墨 · 凤凰 · 翠岚 · 火焰 · 青境 · 玫瑰石英 · 琥珀。
 
@@ -42,6 +36,8 @@ Aero · 极光 · 石墨 · 凤凰 · 翠岚 · 火焰 · 青境 · 玫瑰石英
 
 ## 开发
 
+**开发语言为 JavaScript，不是 Java。** 客户端与安装/构建脚本使用 JavaScript（`.js` / `.mjs`），CSS 作为字符串包含在客户端模块中；JSON/YAML 用于配置，Markdown 用于文档。GitHub 的语言栏不是仓库全部文件类型的占比。
+
 需要 Node.js 22 或更高版本：
 
 ```sh
@@ -55,14 +51,18 @@ npm run release -- --out=../glass-skins-release
 
 [验证摘要 / Validation](docs/VALIDATION.md) · [架构](docs/ARCHITECTURE.md) · [贡献指南](CONTRIBUTING.md) · [安全问题](SECURITY.md) · [更新记录](CHANGELOG.md)
 
-## 署名、许可与致谢
+## 开发贡献与参考
 
-Copyright © 2026 **爱伦提卡**。本项目采用 [MIT](LICENSE)，允许使用、修改和分发；请保留许可证中的版权与许可文字。制作者署名不是第三方库的版权声明。
+| 贡献者 / 协作工具 | 主要职责 |
+| --- | --- |
+| 爱伦提卡 | 项目发起、设计方向、需求与视觉/交互验收 |
+| OpenAI Codex | 代码实现与整理、玻璃/动效研究、性能与兼容验证、安装及开源准备 |
+| DeepSeek Harness 内的 AI | 早期原型、插件开发、宿主 DOM 核对与布局/几何优化 |
 
-开发工具协作：DeepSeek Harness 内的 AI、OpenAI Codex。感谢 DeepSeek Harness 社区与相关开源作者；完整职责区分、依赖许可和 46 项研究链接见 [CREDITS.md](CREDITS.md)、[NOTICE.md](NOTICE.md)、[SOURCES.md](docs/SOURCES.md)。发布包携带三项 MIT 依赖并保留其原始许可证。
+AI 名称表示开发协作工具。感谢 DeepSeek Harness 项目及其贡献者提供宿主；依赖许可和 46 项研究链接见 [CREDITS.md](CREDITS.md)、[NOTICE.md](NOTICE.md)、[SOURCES.md](docs/SOURCES.md)。发布包携带三项 MIT 依赖并保留其原始许可证。
 
-本项目不是 DeepSeek、Apple 或其他参考机构的官方产品；参考与致谢不表示参与或背书。没有分发游戏素材、用户截图、聊天数据、宿主私有文件或研究源码快照。
+本项目不是 DeepSeek、Apple 或其他参考机构的官方产品；参考与致谢不表示参与或背书。没有分发游戏素材、私人聊天、宿主私有文件或研究源码快照。
 
-[显性及隐性制作者标记 / Visible and non-UI creator marks](WATERMARKS.md)
+## 许可
 
-自由使用、修改与分发；分发副本/衍生版本时，请保留 LICENSE 内的制作者版权声明、原项目链接和许可文字。界面无需增加新的强制展示规则。
+Copyright © 2026 爱伦提卡。采用 [MIT 许可证](LICENSE)，允许使用、修改及商业分发；分发副本或衍生版本时，保留许可证中的版权声明、原项目链接与许可文字。无需额外强制展示界面署名。

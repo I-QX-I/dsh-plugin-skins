@@ -1,26 +1,22 @@
 # Glass Skins · 玻璃皮肤
 
-**An independent DeepSeek Harness glass skin plugin, made by 爱伦提卡.**
+An independent appearance plugin for DeepSeek Harness: translucent glass, flowing gradients and nine themes. Disable or uninstall it whenever you need.
 
-[中文](README.md) · [Download](https://github.com/I-QX-I/dsh-plugin-skins/releases/latest) · [Trailer](https://github.com/I-QX-I/dsh-plugin-skins/releases/download/v2.6.3/glass-skins-promo.mp4) · [Credits](CREDITS.md)
-
-![Glass Skins](docs/assets/cover.jpg)
+[中文](README.md) · [Download](https://github.com/I-QX-I/dsh-plugin-skins/releases/latest) · [Credits](CREDITS.md) · [References](docs/SOURCES.md)
 
 ## Install with one chat request
 
 Paste this line into a **DeepSeek Harness conversation**, then send:
 
 ```text
-Install and enable Glass Skins by 爱伦提卡 from https://github.com/I-QX-I/dsh-plugin-skins/releases/download/v2.6.3/glass-skins.zip; follow the bundled AI-INSTALL.en.md, use the current profile and preserve existing preferences.
+Install and enable Glass Skins from https://github.com/I-QX-I/dsh-plugin-skins/releases/download/v2.6.3/glass-skins.zip; follow the bundled AI-INSTALL.en.md, use the current profile and preserve existing preferences.
 ```
 
-This is an AI installation request, not a shell command. The assistant downloads and verifies the ZIP, then uses the host plugin manager or official CLI, subject to host permissions. If downloading is unavailable, attach the [ZIP](https://github.com/I-QX-I/dsh-plugin-skins/releases/download/v2.6.3/glass-skins.zip) and ask to install. No source build or manual extraction is required. Open **Settings → Skins** afterward. The downloaded original can be moved or deleted; keep the managed installation cache.
+This is an AI installation request, not a shell command. The assistant downloads and verifies the ZIP, then uses the host plugin manager or official CLI, subject to host permissions. If downloading is unavailable, attach the [ZIP](https://github.com/I-QX-I/dsh-plugin-skins/releases/download/v2.6.3/glass-skins.zip) and ask to install. Use the Release installation package, **not GitHub's automatically generated Source code ZIP**. No source build or manual extraction is required. Open **Settings → Skins** afterward. Fresh installs use the Aero liquid-glass preset; upgrades preserve explicit preferences. The downloaded original can be moved, renamed or deleted; keep the managed installation cache. The assistant will indicate if a restart is needed.
 
 ## Features
 
 Nine palettes; liquid and frosted glass; independent rim highlight and refraction thickness; adjustable gradient flow, planar light drift, color separation, opacity and lighting. Long text uses lightweight reading glass. English/Chinese, host light/dark appearance, reduced motion and capability fallbacks are supported. Preferences persist. Disable or uninstall through the host manager.
-
-![Themes](docs/assets/themes.jpg)
 
 Aero · Aurora · Graphite · Phoenix · Jade · Flame · Teal · Rose Quartz · Amber.
 
@@ -31,6 +27,8 @@ Visually and operationally tested primarily on Windows Electron/Chromium Harness
 The plugin does not patch the host executable or change accounts, models, chat data or other plugins. [Compatibility](docs/COMPATIBILITY.md) · [Device checklist](TEST-OTHER-DEVICE.md).
 
 ## Development
+
+**The development language is JavaScript, not Java.** Client, installation and build code use JavaScript (`.js` / `.mjs`). CSS is embedded as strings in client modules; JSON/YAML describe configuration and Markdown contains documentation. GitHub's language bar is not a breakdown of every file type in the repository.
 
 Node.js 22+:
 
@@ -45,10 +43,16 @@ Edit `src/client/`, then build the generated `client.js`. Public tests cover rep
 
 [验证摘要 / Validation](docs/VALIDATION.md) · [Architecture](docs/ARCHITECTURE.md) · [Contributing](CONTRIBUTING.md) · [Security](SECURITY.md) · [Changelog](CHANGELOG.md).
 
-## License and credits
+## Development credits and references
 
-Copyright © 2026 爱伦提卡. [MIT License](LICENSE); retain its copyright and permission notices when redistributing. AI development tools: DeepSeek Harness AI and OpenAI Codex. See [Credits](CREDITS.md), [Notice](NOTICE.md) and [46 research references](docs/SOURCES.md) for roles, third-party licenses and research attribution. Releases vendor three MIT dependencies with upstream notices. This is not an official DeepSeek or Apple product. No user conversations, private host files, reference-game assets or research source snapshots are distributed.
+| Contributor / development tool | Main contribution |
+| --- | --- |
+| 爱伦提卡 | Project initiation, design direction, requirements and visual/interaction acceptance |
+| OpenAI Codex | Implementation and code organization, glass/motion research, performance and compatibility checks, installation and open-source preparation |
+| AI within DeepSeek Harness | Early prototypes, plugin development, host DOM checks and layout/geometry improvements |
 
-[显性及隐性制作者标记 / Visible and non-UI creator marks](WATERMARKS.md)
+AI names identify development tools. The host is provided by the DeepSeek Harness project and its contributors. See [Credits](CREDITS.md), [Notice](NOTICE.md) and [46 research references](docs/SOURCES.md) for roles, third-party licenses and research attribution. Releases vendor three MIT dependencies with upstream notices. Acknowledgement does not imply review or endorsement. This is not an official DeepSeek or Apple product. No private conversations, host files, reference-game assets or research source snapshots are distributed.
 
-Use, modify and redistribute freely. When distributing copies or derivatives, retain the creator copyright, original-project URL and permission notice in LICENSE. No extra mandatory UI display condition is added.
+## License
+
+Copyright © 2026 爱伦提卡. [MIT licensed](LICENSE): use, modify and redistribute, including commercially. Retain the copyright, original-project URL and permission notice in the license when distributing copies or derivatives. No extra mandatory UI attribution is required.
