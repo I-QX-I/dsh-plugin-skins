@@ -100,11 +100,11 @@ window.__ModuleLoader__.load({
 		const zh = {
             acknowledgements: "贡献致谢与参考资料",
             contributorsTitle: "制作与贡献",
-            contributorsText: "爱伦提卡：制作、设计方向与视觉验收。DeepSeek Harness 内的 AI 协作：历史原型与插件开发。OpenAI Codex：研究、实现、性能与兼容验证。DeepSeek AI 与 Harness 开源贡献者：宿主与插件接口。",
+            contributorsText: "爱伦提卡负责制作与设计。OpenAI Codex 和 DeepSeek Harness 中的 AI 助手参与代码实现、优化与测试。感谢 DeepSeek AI 及 Harness 开源贡献者提供宿主与插件接口。",
             dependenciesText: "随包依赖：@deepseek-ai/schemastery、@deepseek-ai/cosmokit、@standard-schema/spec；作者、版权与许可证保留在各依赖的 package.json / LICENSE。",
             referencesTitle: "设计与技术参考",
-            referencesText: "感谢 Apple、W3C、Google、Microsoft、Adobe、Nintendo，以及 shuding、rdev、MoonGlassKitty、Alex Harri、sa3dany 等参考项目作者。参考不表示参与本插件开发或为其背书；不随包分发第三方视觉素材。",
-            creditsFiles: "完整贡献说明与许可证见包内 CREDITS.md、NOTICE.md；参考清单见 docs/SOURCES.md。AI 名称表示协作工具，不替代制作者署名。",
+            referencesText: "感谢 Apple、W3C、Google、Microsoft、Adobe、Nintendo，以及 shuding、rdev、MoonGlassKitty、Alex Harri、sa3dany 等参考项目作者。相关项目与资料列于下方。",
+            creditsFiles: "完整致谢见 CREDITS.md，第三方许可见 NOTICE.md，参考资料见 docs/SOURCES.md。",
 
 			nav: '皮肤',
 			title: '皮肤',
@@ -169,11 +169,11 @@ window.__ModuleLoader__.load({
 		const en = {
             acknowledgements: "Credits and references",
             contributorsTitle: "Creation and contributions",
-            contributorsText: "爱伦提卡: creator, design direction and visual acceptance. AI collaboration in DeepSeek Harness: historical prototypes and plugin development. OpenAI Codex: research, implementation, performance and compatibility validation. DeepSeek AI and Harness contributors: host and plugin APIs.",
+            contributorsText: "Created and designed by 爱伦提卡, with development and testing assistance from OpenAI Codex and the AI assistant in DeepSeek Harness. Thanks to DeepSeek AI and the Harness contributors for the host and plugin APIs.",
             dependenciesText: "Bundled dependencies: @deepseek-ai/schemastery, @deepseek-ai/cosmokit and @standard-schema/spec. Original author, copyright and licence notices remain in each package.json / LICENSE.",
             referencesTitle: "Design and technical references",
-            referencesText: "Thanks to Apple, W3C, Google, Microsoft, Adobe, Nintendo, and reference authors including shuding, rdev, MoonGlassKitty, Alex Harri and sa3dany. References do not imply contribution or endorsement. Third-party visual assets are not distributed.",
-            creditsFiles: "Full credits and licence notes: CREDITS.md and NOTICE.md in the package. Full source list: docs/SOURCES.md. AI names identify collaboration tools, not the creator.",
+            referencesText: "Thanks to Apple, W3C, Google, Microsoft, Adobe, Nintendo, and reference authors including shuding, rdev, MoonGlassKitty, Alex Harri and sa3dany. Related projects and resources are listed below.",
+            creditsFiles: "Full credits: CREDITS.md. Third-party licenses: NOTICE.md. Reference links: docs/SOURCES.md.",
 
 			nav: 'Skins',
 			title: 'Skins',

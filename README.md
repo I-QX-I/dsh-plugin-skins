@@ -55,7 +55,7 @@ Aero · 极光 · 石墨 · 凤凰 · 翠岚 · 火焰 · 青境 · 玫瑰石英
 
 ## 兼容性
 
-主要在 Windows Electron/Chromium Harness 完成实机验证；macOS/Linux 尚无实机视觉验收。宿主更新可能需要适配。极细圆角存在部分 DPR 下的像素边界，「全透」为实验选项；详情见[兼容说明](docs/COMPATIBILITY.md)与[测试清单](TEST-OTHER-DEVICE.md)。
+主要在 Windows Electron/Chromium Harness 完成实机验证；macOS/Linux 尚未完成实机画面测试。宿主更新可能需要适配。部分屏幕缩放下，圆角细线可能出现像素断续，「全透」为实验选项；详情见[兼容说明](docs/COMPATIBILITY.md)与[测试清单](TEST-OTHER-DEVICE.md)。
 
 插件不修改宿主可执行文件、账号、模型、聊天或其他插件。
 

@@ -1,13 +1,17 @@
 # 架构 / Architecture
 
-运行时分两部分：index.js 注册 Config、客户端和 locale；client.js 是宿主模块加载器读取的生成单文件。src/client/parts.json 列出 18 个完整职责片段，build-client.mjs 按原字节拼到 runtime.template.js 的唯一标记。各片段目前仍共享工厂作用域，不宣称完全模块隔离。
+`index.js` 注册配置、客户端和语言文件；宿主加载构建生成的 `client.js`。客户端源码分为18个文件，由 `src/client/parts.json` 指定顺序，构建时插入 `runtime.template.js`。这些文件共用工厂作用域。
 
-主题与设置数据、颜色计算、材质配方、样式、设置 UI、偏好存储、背景、光学发现/采样、几何运动与生命周期分开维护。详见 [源码职责](../src/client/README.md)。不要加运行时相对导入或复制选择器/配方。
+主题、颜色计算、材质、样式、设置页、偏好、背景、折射和动画分别维护。文件说明见 [客户端源码](../src/client/README.md)。选择器和材质配方集中定义，运行时无需相对导入。
 
-光学发现先测量后提交；可见性缓存减少长会话的测量。滚动复用候选，DOM/状态变化刷新发现。高于 240 CSS px 的长文面释放全表面 SVG 镜片，保留阅读材质。移动层与静止层共用轮廓/材质，高光和折射厚度独立。背景为静态底色、两个连续色场和五个固定尺寸的平面光球，使用 transform/opacity 动效。
+折射更新先读取几何信息，再提交样式。滚动时复用候选表面列表，结构或状态变化时重新检查。高度超过240 CSS px的输入和消息表面使用轻量阅读材质。移动与静止状态共用轮廓和材质；高光与折射厚度分别控制。
 
-偏好采用乐观更新和串行保存，抵御旧快照回显；旧 ocean 迁移到 aero，不覆盖已有显式选择。关闭/卸载须清理样式、镜片、标记、观察器和事件，并恢复宿主原外观。
+背景由底色、两个流动色场和五个固定尺寸的平面光球组成，主要通过 `transform` 和 `opacity` 动画更新。偏好即时显示、按顺序保存；旧 `ocean` 主题映射到 `aero`。关闭或卸载时清理样式、镜片、事件和观察器，恢复宿主外观。
 
-INSTALLER.mjs 只验证安全的 TGZ 路径/包身份并复制到 SHA256 命名的稳定缓存。ZIP 的 INSTALL.mjs 验证固定载荷哈希。它们不自行安装；宿主工具或官方 CLI 执行正式管理操作。release 构建解引用三项 MIT 依赖，携带各自许可，不分发开发环境链接。
+`INSTALLER.mjs` 校验归档和包身份，将归档保存到以SHA-256命名的缓存；ZIP中的 `INSTALL.mjs` 校验内包哈希。正式安装由宿主插件管理器或官方CLI完成。发布包携带三项依赖和相应许可证。
 
-Runtime stays in a single generated host factory. Source sections separate responsibilities without claiming full scope isolation. Geometry reads precede writes; candidate caches reduce repeated scroll discovery; long text uses lightweight reading material. Installation helpers validate and stage only; host management owns installation, rollback and removal. Public tests are portable behavioral checks and never a substitute for actual GPU/visual acceptance.
+The host loads a single generated client file. Eighteen source files share a factory scope, with themes, styles, settings, preferences, background motion and optics maintained separately.
+
+Geometry reads precede style writes. Cached surface lists reduce scroll work, and tall inputs/messages use lightweight glass. Preferences update immediately and save in order. Disabling or unloading the plugin removes its styles, listeners and observers.
+
+Installation helpers validate archives and stage them in a stable cache. The host manager or official CLI performs installation. Required dependencies and their licenses are included in release packages.

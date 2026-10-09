@@ -1,25 +1,25 @@
-> Public release: [v2.6.3](https://github.com/I-QX-I/dsh-plugin-skins/releases/tag/v2.6.3).
+# 在其他设备上试用 / Trying another device
 
-# 其他设备试装 / Other-device test
+下载Release中的 `glass-skins.zip`，拖入Harness对话，发送“安装这个插件”。安装流程见 [安装说明](INSTALL.md)，无需调试端口或开发工具。
 
-将成品 ZIP 拖入 Harness，不必手工解压；发送“安装这个插件”即可。需要明确约束时可发送：
+安装后可以检查这些项目：
 
-> 安装附件中由爱伦提卡制作的玻璃皮肤插件。按包内 AI-INSTALL.md 安装，先缓存归档，再用宿主 install_bundle；保留已有配置，不改其他插件、账号、模型或聊天。
+1. 新安装使用Aero液体玻璃；升级后原来的设置仍在。
+2. 设置页、插件页和已有长对话滚动正常，长草稿输入流畅。
+3. 主题、材质和动效设置能够切换，重启后仍保留。
+4. 不同窗口大小、系统缩放、浅深色和中英文下，文字与按钮显示正常。
+5. 减少动画设置生效；关闭皮肤后恢复宿主外观，停用和卸载没有残留样式。
 
-Drag the ZIP into Harness and say “Install this plugin”; no manual extraction is required. For explicit constraints:
+如果遇到问题，请记录系统、Harness版本、屏幕缩放、主题与出现问题的操作。截图前隐藏私人内容，提交到 [Issues](https://github.com/I-QX-I/dsh-plugin-skins/issues)。已知限制见 [兼容性](docs/COMPATIBILITY.md)。
 
-> Install the attached Glass Skins plugin made by 爱伦提卡. Follow AI-INSTALL.en.md: stage the archive in a stable cache and use the host install_bundle operation. Preserve existing preferences; do not alter other plugins, accounts, models or chats.
+Download `glass-skins.zip` from the Release, attach it to Harness and say “Install this plugin.” See [Installation](INSTALL.en.md); no debugging port or developer tools are needed.
 
-无需调试端口、Node安装、源码构建或联网下载依赖。若安装助手或宿主需要权限，遵循该设备的现有权限设置。归档不会自动执行或直接改配置；安装交给宿主管理器。No debugging port, developer build or dependency download is required. Follow the device’s existing permission settings; the host manager owns installation.
+After installation, check:
 
-安装后可移动/改名/删除原下载；保留受管理缓存，因为重装可能仍引用它。The original download can move or be deleted after installation from the managed cache. Keep that cache while the profile references it.
+1. A fresh installation uses Aero liquid glass; an upgrade keeps previous preferences.
+2. Settings, Plugins, existing long conversations and long drafts remain responsive.
+3. Theme, material and motion choices work and survive a restart.
+4. Text and controls display correctly at different window sizes and display scales, in light/dark mode and Chinese/English.
+5. Reduced motion works, disabling restores the original appearance, and uninstalling leaves no plugin styles behind.
 
-建议顺手检查 / Suggested checks:
-
-1. 新装为 Aero / 极透 / 液体玻璃；旧安装的偏好仍保留。Fresh installation selects the creator’s Aero/Ultra/liquid preset; an upgrade preserves existing preferences.
-2. 设置、插件页和已有长对话滚动；粘贴长草稿，不必发送。Scroll Settings, Plugins and an existing long conversation; paste a long draft without sending it.
-3. 主题、材质、速度、高光和折射厚度能切换，重启后保存。Check themes, material, speeds, rim and refraction thickness; preferences should survive restart.
-4. 测试系统缩放/窗口大小与宿主浅深色、中英文；查看设置底部署名、致谢和参考。Check display scale, window size, host light/dark appearance and Chinese/English; inspect the footer credits and references.
-5. 减少动画偏好生效；关闭皮肤后恢复宿主外观，停用/卸载由宿主插件管理器操作。Check reduced motion, restoring the host appearance with the skin switch, and disabling/uninstalling through the host plugin manager.
-
-如有问题，记录设备、系统、Harness版本、缩放比例、材质和出现卡顿的操作；截图前隐藏私人内容。既有极细圆角像素断续、全透实验档阅读边界仍保留；未声称所有显卡或未来宿主版本均已实测。If an issue occurs, record device/OS/Harness version, display scale, material and the triggering action. Hide private content before screenshots. Fine corner-line pixel discontinuities and Pure’s experimental readability limits remain; not every GPU or future host version has been tested.
+Report problems in [Issues](https://github.com/I-QX-I/dsh-plugin-skins/issues), including OS, Harness version, display scale, theme and the triggering action. Hide private content in screenshots. Known limits are listed in [Compatibility](docs/COMPATIBILITY.md).

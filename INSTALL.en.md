@@ -1,19 +1,24 @@
-> Public release: [v2.6.3](https://github.com/I-QX-I/dsh-plugin-skins/releases/tag/v2.6.3).
+# Installation and use
 
-# Installation and maintenance
+[中文](INSTALL.md) · [Download the latest release](https://github.com/I-QX-I/dsh-plugin-skins/releases/latest)
 
-[中文](INSTALL.md) · [Quick AI installation](AI-INSTALL.en.md) · [Credits](CREDITS.md)
+Download `glass-skins.zip`, attach it to a DeepSeek Harness conversation and say “Install this plugin.” No manual extraction or commands are needed. The assistant uses the conversation's installation tool, or the host's official CLI if that tool is unavailable.
 
-Drag the release ZIP into DeepSeek Harness and say “Install this plugin”. No manual extraction or commands are required. Its AI automatically uses the session installation tool or official host CLI without changing presets. The helper validates the archive and stages it in a stable content-addressed cache; the host plugin manager installs and enables that source. The downloaded original can then be moved, renamed or deleted. Older archives do not contain this improved flow.
+Fresh installs use Aero liquid glass; upgrades preserve your preferences. Once installed, the original download can be moved, renamed or deleted. Keep the host-managed installation cache.
 
-Settings → Skins controls appearance. New installations use the creator’s Aero liquid glass preset. Existing twelve-field preferences are preserved. Plugin display metadata has Chinese and English names; its technical package/entry identifiers remain `dsh-plugin-skins`/`skins` for upgrades and preferences.
+## Using the plugin
 
-Install, update, disable and uninstall through the host manager. Do not manually edit profiles or replace host application files. Disabling/unloading releases plugin-owned styles, background elements, optical maps, observers, event listeners and timers. Cached installation archives intentionally remain as stable reinstall sources; do not remove one while a profile references it.
+Open **Settings → Skins**, enable the skin and choose a theme and material. Opacity, lighting, background speed, color separation, highlights and refraction thickness can be adjusted independently.
 
-The three required schema packages are included in prepared releases with their MIT licenses and exact versions in DEPENDENCIES.json. No admin privileges, development tools, remote fonts or material services are required. AI tool permissions still follow the host's rules. Other profile dependencies can affect installation time or network needs.
+Pure transparency is experimental. Try Crystal or Clear if the background makes text hard to read. Long inputs and messages use lightweight glass. System reduced motion, reduced transparency and stronger contrast settings are supported.
 
-Capability-based fallbacks cover older media-query listeners and missing optional browser APIs. Reduced motion/transparency and stronger contrast settings are respected. Chromium/DPR simulations and the tested Windows host cannot certify all physical GPUs, operating systems, remote sessions or future Harness versions; rerun the host contract checks after upgrades.
+Turn off the skin switch to restore the host appearance. Use the host plugin manager to update, disable or uninstall.
 
-For release preparation, run `npm run build:check`, the relevant checks, then `npm run release:stage -- --out=<separate empty directory>`. Package only that prepared directory, not the development checkout. The staging process copies actual dependency files rather than machine-specific links. Formal packaging and release are separate steps from validation archives.
+## Common questions
 
-开发 / Development: `npm run release -- --out=../release`。公开 Releases 的 ZIP 是给用户的安装包，GitHub Source code ZIP 是开发源码。
+- **No Skins entry?** Check the plugin's loading status. Restart normally if the host asks you to.
+- **Can I move the downloaded file?** Yes. A normal installation uses a separate managed cache.
+- **Do I need developer tools?** No. Release packages include the required dependencies and need no compilation or extra services.
+- **Will it look identical on every computer?** GPU, display scale and host version can affect rendering. See [Compatibility](docs/COMPATIBILITY.md).
+
+Use the ZIP attached to the GitHub Release for installation. Source code ZIP is for development. A development `link:` mount depends on the source directory staying in place.

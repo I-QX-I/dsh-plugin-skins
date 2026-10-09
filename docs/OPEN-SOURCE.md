@@ -6,4 +6,4 @@
 - [Catppuccin VS Code](https://github.com/catppuccin/vscode)：主题预览、优先安装路径与社区资料。
 - [Harness plugin manager](https://github.com/deepseek-ai/deepseek-harness/blob/master/packages/boot/plugin-manager/README.md)：实际 bundle/profile 管理契约。
 
-研究参考与生产依赖不同。完整历史研究链接仍见 SOURCES.md，界面保留相同 46 项；本页只记录本轮仓库呈现参考。
+更多设计与技术资料见 [SOURCES.md](SOURCES.md)，随包依赖及许可证见 [NOTICE.md](../NOTICE.md)。

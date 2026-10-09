@@ -1,15 +1,27 @@
-# 验证摘要 / Validation summary — 2.6.3
+# 测试记录 / Test results
 
-## 本次公开发布
-- index.js 与已验收的 rc.9 逐字节一致；client.js 除新增静态制作者注释外逐字节一致，新增公开资料/许可/发布脚本，不改变实际外观。
-- 公开可移植检查通过：构建一致性、12项新装默认/已有选择、旧快照回显/串行持久化/主题迁移、86项中英文键及46项参考、安装缓存/非法归档/篡改处理。
-- ZIP 12项根文件，全部校验和与 CRC 通过；内层 TGZ 携带 MIT 许可证和三项依赖各自的原始许可，不含开发机文件。
-- 中文/空格/单引号路径、稳定缓存与下载移动验证通过。
-- 空 profile + 空 pnpm store + 离线安装耗时本机 875.2ms；载入 Config/apply、12默认字段、异实例宿主 schema 和移走下载后的离线重装通过。这是隔离包/依赖测试，不能当作用户整段 AI 安装耗时保证。
+## 2.6.3发布检查
 
-## 已接受运行时的历史验证
-本地37项回归、两种材质、DPR/浅深外观、七种能力回退与清理、真实长文和窗口响应均有本地证据。历史完整诊断依赖宿主快照和机器环境；公开仓库没有分发这些快照或私有记录。
+- 构建一致性、12项配置字段、新装默认值、已有偏好保存和旧主题迁移通过检查。
+- 86项中英文键、46项参考链接，以及安装缓存、非法归档和篡改处理通过检查。
+- ZIP根目录12个文件的校验和与CRC检查通过；内包包含三项依赖及其MIT许可证。
+- 中文、空格、单引号路径，以及移动原下载文件后的安装和重装通过检查。
+- 空profile、空pnpm store下的离线安装，本机耗时875.2 ms。这仅是包和依赖的安装时间，不包含AI处理请求的时间。
 
-本机可见宿主对话滚动的两次测量：帧间隔中位约11.200/11.036ms，P95约13.501/12.239ms，最大33.598/12.989ms；第一次有一个超过33.34ms的帧。结果只代表同场景本机采样，不是全设备FPS保证。完整37项不等同本仓库可移植测试数量。
+## 运行检查
 
-Real-window acceptance primarily covers Windows. macOS/Linux CI checks JS/package portability only. Different GPU/DPR, remote sessions and future Harness updates still need actual visual/response testing. Fine corner pixels and pure transparency retain the documented boundaries.
+本机完成过37项回归，以及两种材质、屏幕缩放、浅深色、七种能力回退和卸载清理检查。长文输入、对话滚动和窗口操作也在实际Windows宿主中检查过。
+
+两次对话滚动采样的帧间隔中位数为11.200/11.036 ms，P95为13.501/12.239 ms，最大值为33.598/12.989 ms。结果来自本机相同场景，不代表其他设备的帧率。历史37项检查包含本地宿主快照，数量与仓库可移植测试不同。
+
+macOS/Linux目前仅有代码和安装包的自动测试，尚未完成实机画面检查。圆角细线和全透选项的已知限制见 [兼容性](COMPATIBILITY.md)。
+
+## English
+
+Release 2.6.3 passed build consistency, configuration defaults and persistence, theme migration, localization, reference-link and installation checks. Archive checks cover checksums, CRC, invalid paths, tampering and bundled dependency licenses.
+
+A clean offline profile/store installation took 875.2 ms on the test machine. This measures package installation, excluding the assistant's processing time. Chinese, spaced and apostrophe-containing paths, and reinstalling after moving the original download, were also checked.
+
+Windows runtime checks covered glass materials, display scales, light/dark appearance, fallbacks, cleanup and long-text interaction. Two conversation-scroll samples had median frame intervals of 11.200/11.036 ms and P95 values of 13.501/12.239 ms. These are local measurements, not a cross-device frame-rate guarantee.
+
+macOS/Linux CI covers code and package portability; physical-device visuals remain untested. See [Compatibility](COMPATIBILITY.md) for known rendering limits.

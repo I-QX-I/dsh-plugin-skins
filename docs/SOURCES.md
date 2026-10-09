@@ -4,9 +4,9 @@
 
 [贡献与致谢 / Credits](../CREDITS.md)
 
-本表汇总交接、阶段报告和维护文档中明确记录的公开参考，包括后来未采用的研究方向；不是生产依赖清单，也不表示全部方案已部署。没有收录私人聊天、用户截图、profile 或作者机器路径。
+以下是开发过程中查阅的设计资料、技术文档和开源实现，部分方案仅用于研究。随包依赖及许可证见 NOTICE.md。
 
-This index collects public references explicitly recorded in the project handoffs, stage reports and maintenance documents, including research that was not adopted. It is not a runtime dependency list or a claim that every method was deployed. Private chats, screenshots, profiles and developer paths are excluded.
+Design resources, technical documentation and open-source implementations consulted during development are listed below. Some approaches were explored but not adopted. Bundled dependencies and licenses are listed in NOTICE.md.
 
 Apple/Fluent 用于设计层次与动效原则；开源玻璃/渐变项目用于实现对照；W3C/MDN/Skia/PBRT 用于采样、轮廓和光学语义；Google 用于真实性能；Harness/npm 用于插件与发布契约。Nintendo 和用户提供文章是历史视觉/研究入口，不分发其素材。
 

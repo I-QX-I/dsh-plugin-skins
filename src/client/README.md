@@ -8,6 +8,7 @@
 |---|---|
 | setup.js | React、插件命名空间、样式身份、固定常量及媒体查询监听清理 |
 | locales.js | 中英文设置文案 |
+| acknowledgements.js | 设置页参考资料链接 |
 | themes.js | 九主题背景与光色配方 |
 | recipes-and-selectors.js | 材质、透明度、开关与宿主表面选择器 |
 | color-tools.js | 无外部依赖的颜色转换、场景配色及轮廓计算；六个纯函数接口 |
@@ -32,4 +33,4 @@
 
 样式更新器由 createSkinSheetUpdater 创建，规则匹配、递归更新和最多八份模板缓存封闭在每个安装实例内；生命周期明确释放缓存。原生标题栏通知同样按实例拥有 token，卸载恢复原值与优先级，并保留其他写入者的后续修改。兼容分支与宿主升级契约见 [兼容维护](../../docs/COMPATIBILITY.md)。
 
-阶段45新增纯参考数据 acknowledgements.js（共18职责）；全部46链接与随包 SOURCES.md 一致性检查，设置使用原生details，不自动联网。optics缓存仅用于滚动成员列表，结构/选择/尺寸变化完整刷新，清理时释放。
+acknowledgements.js保存设置页的参考链接，与docs/SOURCES.md同步。设置页使用原生details展开资料。optics在滚动时复用表面列表，结构、选择或尺寸变化时刷新，卸载时释放缓存。
