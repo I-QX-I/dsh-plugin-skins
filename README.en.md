@@ -35,6 +35,19 @@ Open **Settings → Skins**. Fresh installs use Aero liquid glass; upgrades pres
 
 Aero · Aurora · Graphite · Phoenix · Jade · Flame · Teal · Rose Quartz · Amber
 
+<details>
+<summary>Theme and settings screenshots</summary>
+
+![Nine theme selectors and opacity: live settings page](docs/assets/themes-settings.png)
+
+The nine palette selectors in Settings, with Aero selected.
+
+![Background motion, glass material, highlights and refraction thickness: live settings page](docs/assets/material-settings.png)
+
+Adjust background speed and color, glass highlights and refraction thickness independently. Both screenshots preserve the actual UI from the same Windows host.
+
+</details>
+
 - Liquid and frosted glass; separate highlight and refraction-thickness controls.
 - Adjustable gradient flow, light drift, color separation, opacity and lighting.
 - Lightweight reading material for long drafts and messages, preserving message behavior.

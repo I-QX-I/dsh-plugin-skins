@@ -7,3 +7,7 @@
 The homepage animation records the running Windows DeepSeek Harness app with Aero liquid glass and the host UI in Chinese. Frames come from the local debugging connection, without a reconstructed interface, simulated light trajectories, conversations or a promotional film.
 
 Frames are resampled using capture timestamps to 16 fps, scaled to 1080 pixels wide and encoded as a looping WebP (about 13.6 seconds, 5.2 MB). The input-area detail uses the same recording. A 0.4-second crossfade joins the loop; it is a preview edit, not host animation behavior. Capture overhead makes the recording unsuitable as a performance measurement or cross-device guarantee. The still PNG preserves the original user-supplied screenshot.
+
+`themes-settings.png` 与 `material-settings.png` 为同一宿主的原始渲染截图，分别展示九款主题的选择卡片，以及背景动效和玻璃细调。采集时只滚动设置页面，没有切换主题或修改偏好。主题选择卡片不是九款主题的整窗效果对照。
+
+`themes-settings.png` and `material-settings.png` are original renderer screenshots from the same host, showing the nine theme selectors and the background/glass controls. Capture only scrolled the settings page; themes and preferences were left unchanged. Theme selector swatches are not full-window comparisons of all nine themes.
