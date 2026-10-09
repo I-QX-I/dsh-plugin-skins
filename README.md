@@ -13,7 +13,7 @@ Aero 液体玻璃，真实界面录制，自动循环。[静态截图](docs/asse
 <details>
 <summary>查看输入区玻璃细节</summary>
 
-![输入区玻璃与背景运动：实机录屏局部](docs/assets/glass-detail.webp)
+![输入区玻璃与背景运动：实机录屏局部](docs/assets/glass-input.webp)
 
 同一段录屏的输入区局部，观察背景透过玻璃时的变化。
 

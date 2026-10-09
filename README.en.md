@@ -13,7 +13,7 @@ Aero liquid glass, recorded from the running app and looped automatically. [Stil
 <details>
 <summary>Input-area glass detail</summary>
 
-![Input-area glass and background motion: cropped live recording](docs/assets/glass-detail.webp)
+![Input-area glass and background motion: cropped live recording](docs/assets/glass-input.webp)
 
 A crop from the same recording, showing background motion through the glass.
 
