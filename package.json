@@ -28,7 +28,11 @@
     "LICENSE",
     "docs/OPEN-SOURCE.md",
     "WATERMARKS.md",
-    "CREATOR.json"
+    "CREATOR.json",
+    "CONTRIBUTING.md",
+    "SECURITY.md",
+    "CHANGELOG.md",
+    "docs/VALIDATION.md"
   ],
   "scripts": {
     "build": "node scripts/build-client.mjs",
